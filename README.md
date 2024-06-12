@@ -23,7 +23,7 @@ Inspired by psychometrics, **HQM** focuses on the reliability and validity of ha
 
 ### Data
 
-You can download the images from this [LINK](https://1drv.ms/u/s!AnyDvWHXFwUHbqhRo0p0aADKrho?e=3wXoKj). The image annotations are saved in `image_data.json`.
+You can download the images from this [LINK](https://1drv.ms/u/s!Am-yiMV16ZA5a_xtuyXsjB25Dsw?e=XlyiRE). The image annotations are saved in `image_data.json`.
 
 Our evaluation data is saved in `HQH.json`, with the following format:
 
