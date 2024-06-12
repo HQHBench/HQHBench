@@ -1,22 +1,22 @@
-### Evaluating the Quality of Hallucination Benchmarks for Large Vision-Language Models
+## Evaluating the Quality of Hallucination Benchmarks for Large Vision-Language Models
 
 This is the official repo of our paper: Evaluating the Quality of Hallucination Benchmarks for Large Vision-Language Models.
 
 ***Abstract -*** LVLMs have been plagued by the issue of hallucination. To evaluate the degree of hallucination in LVLMs, previous works have proposed a series of benchmarks featuring different types of tasks and evaluation metrics. However, we find that the quality of the existing hallucination benchmarks varies, with some suffering from problems, e.g., inconsistent evaluation results under repeated tests, and misalignment with human evaluation. To this end, we propose a **H**allucination benchmark **Q**uality **M**easurement framework (**HQM**), which leverages various indicators to assess their reliability and validity. Furthermore, based on the results of our quality measurement, we construct a **H**igh-**Q**uality **H**allucination Benchmark (**HQH**) for LVLMs,  covering comprehensive types of hallucination.
 
-#### HQM Framework
+### HQM Framework
 
 Inspired by psychometrics, HQM focuses on the reliability and validity of hallucination benchmarks. Specifically, for reliability we explore test-retest reliability and parallel-forms reliability, while for validity we examine criterion validity and coverage of hallucination types. The overview of HQM is as follows:
 
-<img src="D:\Desktop\nips\overview2.png" alt="overview2" style="zoom: 50%;" />
+<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/overview.png" alt="overview2" style="zoom: 50%;" />
 
 
 
-#### HQH Benchmark
+### HQH Benchmark
 
 HQH is a high-quality hallucination benchmark for LVLMs built on  [Visual Genome](https://arxiv.org/pdf/1602.07332v1.pdf) dataset. It is created to evaluate the performance of LVLMs across different types of hallucination, highlighting their shortcomings. It consists of 1600 free-form VQA image-instruction pairs, with 200 pairs for each hallucination type.
 
-<img src="D:\Desktop\nips\typeexample.png" alt="typeexample" style="zoom: 40%;" />
+<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/typeexample.png" alt="typeexample" style="zoom: 40%;" />
 
 ##### Data
 
@@ -69,9 +69,9 @@ i.e., add an "answer" field to each instance in `HQH.json`.
 
 ##### Results
 
-<img src="D:\Desktop\nips\rada.png" alt="rada" style="zoom: 40%;" />
+<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/rada.png" alt="rada" style="zoom: 40%;" />
 
-<img src="D:\Desktop\HQH-github\leaderboerd.png" style="zoom: 50%;" />
+<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/leaderboerd.png" style="zoom: 50%;" />
 
 #### Related Projects
 
