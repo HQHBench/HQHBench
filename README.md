@@ -76,7 +76,7 @@ i.e., add an "answer" field to each instance in `HQH.json`.
     <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/rada.png" alt="rada" width="600" />
 </p>
 <p align="center">
-    <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/leaderboerd.png" width="800" />
+    <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/leaderboard.png" width="800" />
 </p>
 
 ## Related Projects
