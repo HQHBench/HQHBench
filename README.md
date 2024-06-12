@@ -1,24 +1,27 @@
-## Evaluating the Quality of Hallucination Benchmarks for Large Vision-Language Models
+# Evaluating the Quality of Hallucination Benchmarks for Large Vision-Language Models
 
 This is the official repo of our paper: Evaluating the Quality of Hallucination Benchmarks for Large Vision-Language Models.
 
 ***Abstract -*** LVLMs have been plagued by the issue of hallucination. To evaluate the degree of hallucination in LVLMs, previous works have proposed a series of benchmarks featuring different types of tasks and evaluation metrics. However, we find that the quality of the existing hallucination benchmarks varies, with some suffering from problems, e.g., inconsistent evaluation results under repeated tests, and misalignment with human evaluation. To this end, we propose a **H**allucination benchmark **Q**uality **M**easurement framework (**HQM**), which leverages various indicators to assess their reliability and validity. Furthermore, based on the results of our quality measurement, we construct a **H**igh-**Q**uality **H**allucination Benchmark (**HQH**) for LVLMs,  covering comprehensive types of hallucination.
 
-### HQM Framework
+## HQM Framework
 
 Inspired by psychometrics, HQM focuses on the reliability and validity of hallucination benchmarks. Specifically, for reliability we explore test-retest reliability and parallel-forms reliability, while for validity we examine criterion validity and coverage of hallucination types. The overview of HQM is as follows:
 
-<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/overview.png" alt="overview2" style="zoom: 50%;" />
+<p align="center">
+<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/overview.png" alt="overview2" width="600" />
+</p>
 
 
-
-### HQH Benchmark
+## HQH Benchmark
 
 HQH is a high-quality hallucination benchmark for LVLMs built on  [Visual Genome](https://arxiv.org/pdf/1602.07332v1.pdf) dataset. It is created to evaluate the performance of LVLMs across different types of hallucination, highlighting their shortcomings. It consists of 1600 free-form VQA image-instruction pairs, with 200 pairs for each hallucination type.
 
-<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/typeexample.png" alt="typeexample" style="zoom: 40%;" />
+<p align="center">
+<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/typeexample.png" alt="typeexample" width="600" />
+</p>
 
-##### Data
+### Data
 
 You can download the images from this [LINK](https://1drv.ms/u/s!AnyDvWHXFwUHbqhRo0p0aADKrho?e=3wXoKj). The image annotations are saved in `image_data.json`.
 
@@ -26,7 +29,7 @@ Our evaluation data is saved in `HQH.json`, with the following format:
 
 ```python
 [
-    {"id": 27, 
+    {"id": 1, 
     "image_id": 150494, 
     "images": ["./images/150494.jpg"],
     "instruction": "What is the man in a suit doing?",
@@ -40,7 +43,7 @@ where `id` refers to the data id in HQH, `image_id` refers to the image id from 
 
 Note that there is no ground truth in existence hallucination type as the provided image annotations are informative enough.
 
-##### Evaluation
+### Evaluation
 
 We leverage [GPT-3.5](https://platform.openai.com/docs/overview) to calculate the hallucination rate as our evaluation metric.
 
@@ -52,9 +55,9 @@ python evaluate.py --ans_file path/to/your/answer/file
 
 The answer of LVLMs should be organized in a json file in the following format:
 
-```json
+```python
 [
-    {"id": 27, 
+    {"id": 1, 
     "image_id": 150494, 
     "images": ["./images/150494.jpg"],
     "instruction": "What is the man in a suit doing?",
@@ -67,13 +70,16 @@ The answer of LVLMs should be organized in a json file in the following format:
 
 i.e., add an "answer" field to each instance in `HQH.json`.
 
-##### Results
+### Results
 
-<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/rada.png" alt="rada" style="zoom: 40%;" />
+<p align="center">
+    <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/rada.png" alt="rada" width="600" />
+</p>
+<p align="center">
+    <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/leaderboerd.png" width="800" />
+</p>
 
-<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/leaderboerd.png" style="zoom: 50%;" />
-
-#### Related Projects
+## Related Projects
 
 - [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)
 - [InstructBLIP](https://github.com/salesforce/LAVIS/blob/main/projects/instructblip)
