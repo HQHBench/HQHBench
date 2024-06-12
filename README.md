@@ -9,7 +9,7 @@ This is the official repo of our paper: Evaluating the Quality of Hallucination 
 Inspired by psychometrics, **HQM** focuses on the reliability and validity of hallucination benchmarks. Specifically, for reliability we explore test-retest reliability and parallel-forms reliability, while for validity we examine criterion validity and coverage of hallucination types. The overview of HQM is as follows:
 
 <p align="center">
-<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/overview.png" alt="overview2" width="600" />
+<img src="https://github.com/HQHBench/HQHBench/blob/main/assets/overview.png" alt="overview2" width="800" />
 </p>
 
 
