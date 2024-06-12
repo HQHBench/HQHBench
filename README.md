@@ -31,7 +31,7 @@ Our evaluation data is saved in `HQH.json`, with the following format:
 [
     {"id": 1, 
     "image_id": 150494, 
-    "images": ["./images/150494.jpg"],
+    "image": "./images/150494.jpg",
     "instruction": "What is the man in a suit doing?",
     "ground_truth": "Giving a speech.",
     "type": "action"},
@@ -59,7 +59,7 @@ The answer of LVLMs should be organized in a json file in the following format:
 [
     {"id": 1, 
     "image_id": 150494, 
-    "images": ["./images/150494.jpg"],
+    "image": "./images/150494.jpg",
     "instruction": "What is the man in a suit doing?",
     "ground_truth": "Giving a speech.",
     "type": "action",
