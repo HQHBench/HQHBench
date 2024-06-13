@@ -50,7 +50,7 @@ We leverage [GPT-3.5](https://platform.openai.com/docs/overview) to calculate th
 Our evaluation code is provided in `evaluate.py`. You can obtain the evaluation results by running:
 
 ```python
-python evaluate.py --ans_file path/to/your/answer/file
+python evaluate.py --ans_file path/to/your/answer/file --openai_key your/openai/api/key
 ```
 
 The answer of LVLMs should be organized in a json file in the following format:
