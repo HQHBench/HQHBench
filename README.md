@@ -50,10 +50,10 @@ We leverage [GPT-3.5](https://platform.openai.com/docs/overview) to calculate th
 Our evaluation code is provided in `evaluate.py`. You can obtain the evaluation results by running:
 
 ```python
-python evaluate.py --ans_file path/to/your/answer/file --openai_key your/openai/api/key
+python evaluate.py --ans_file path/to/your/answer/file --openai_key your/openai/api/key --num model/num/for/evaluation
 ```
 
-The answer of LVLMs should be organized in a json file in the following format:
+The answers of LVLMs should be organized in a json file in the following format:
 
 ```python
 [
@@ -63,12 +63,12 @@ The answer of LVLMs should be organized in a json file in the following format:
     "instruction": "What is the man in a suit doing?",
     "ground_truth": "Giving a speech.",
     "type": "action",
-    "answer": "The man in the suit is giving a speech to a group of soldiers."},
+    "answers": ["The man in the suit is giving a speech to a group of soldiers.",...]},
     ...
 ]
 ```
 
-i.e., add an "answer" field to each instance in `HQH.json`.
+i.e., add an "answers" field to each instance in `HQH.json`.
 
 ### Results
 
