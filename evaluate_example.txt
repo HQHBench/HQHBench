@@ -1,0 +1,127 @@
+Input Prompt:
+
+Given the input instruction, ground truth answer and detailed image information, please determine whether the response provided by a Large Vision-Language Model (LVLM) contains any hallucination. Hallucination here refers to the situation that the generated response is inconsistent with the input image.
+
+Please note that the ground truth answer and image information only contain factual information and may not be completely comprehensive in describing all the objects and their attributes. Detailed analysis or reasoning in LVLM response should be encouraged and not considered as hallucination.
+
+To evaluate the LVLM responses, you need to provide brief evidence to support your judgment.
+
+###Evaluation criteria:
+-Without hallucination: The LVLM response is semantically similar to the ground truth answer and does not contain any contradictory factual claim with the provided information.
+-With hallucination: The LVLM response is completely different from the ground truth answer, or contains a contradictory factual claim about an object, action, attribute, or any other detail that is not grounded in the provided information.
+
+###Instruction:
+What is the man in a suit doing?
+
+###Ground Truth:
+Giving a speech.
+
+###Image Caption:
+A man giving a speech to a roomful of people.
+
+###Image Details:
+three flags stand near a wall X:689 Y:127 Width:217 Height:217
+man giving speech behind podium X:461 Y:226 Width:314 Height:314
+A man speaking X:486 Y:206 Width:256 Height:256
+black speakers next to the soldier X:166 Y:301 Width:163 Height:163
+the man is giving a speech X:0 Y:7 Width:950 Height:950
+The flag of the United State X:698 Y:120 Width:42 Height:42
+Man and women in uniform X:13 Y:319 Width:999 Height:999
+Logo mounted on a wall X:13 Y:15 Width:141 Height:141
+Microphones on a speaker's podium X:587 Y:319 Width:80 Height:80
+Corner of wooden speaker's podium X:452 Y:333 Width:68 Height:68
+A man in uniform X:305 Y:310 Width:86 Height:86
+A man seen from the back X:363 Y:421 Width:152 Height:152
+man looking to his left X:322 Y:326 Width:52 Height:52
+back of balding man's head X:237 Y:415 Width:86 Height:86
+blue and white flag X:754 Y:130 Width:59 Height:59
+man wearing dark tie X:604 Y:282 Width:30 Height:30
+shadow on wall behind flag X:869 Y:172 Width:32 Height:32
+man wearing dark suit X:582 Y:282 Width:96 Height:96
+woman with short hair X:882 Y:348 Width:77 Height:77
+black speaker near man X:247 Y:305 Width:86 Height:86
+man standing behind a podium X:512 Y:191 Width:188 Height:188
+man wearing glasses X:3 Y:343 Width:58 Height:58
+American Flag behind the man speaking X:693 Y:127 Width:29 Height:29
+A  small bald spot on a mans head X:389 Y:424 Width:76 Height:76
+A microphone directed at the man speaking X:636 Y:307 Width:13 Height:13
+A mans face looking at the gentlemen speaking X:324 Y:320 Width:40 Height:40
+A black square speaker X:115 Y:311 Width:76 Height:76
+The mans hand X:512 Y:273 Width:40 Height:40
+a mans glasses X:32 Y:367 Width:16 Height:16
+A womans head X:877 Y:337 Width:46 Height:46
+The mans dark tie X:610 Y:280 Width:13 Height:13
+The wall is white X:298 Y:23 Width:251 Height:251
+Two bald heads X:230 Y:388 Width:284 Height:284
+A brown wooden platform X:452 Y:326 Width:265 Height:265
+woman with a short haircut X:884 Y:346 Width:57 Height:57
+The speaker's brown tie X:605 Y:285 Width:14 Height:14
+Microphone in front of man speaking X:637 Y:318 Width:38 Height:38
+White and blue flag with gold emblem X:826 Y:130 Width:57 Height:57
+Black, rectangular speakers, one lying down.   X:111 Y:278 Width:260 Height:260
+White wall, featuring Air National Guard insignia.   X:10 Y:63 Width:361 Height:361
+A black light switch.  X:184 Y:285 Width:17 Height:17
+
+###Model Response:
+Answer1: He's giving a speech to a crowd of military men and women
+Answer2: He's giving a speech in front of a group of military men and women
+Answer3: giving a speech
+Answer4: The man in a suit is giving a speech at a podium in front of an audience.
+Answer5: The man in a suit is giving a speech to an audience of military personnel. He is standing at a podium and speaking to the audience.
+Answer6: The man in a suit is giving a speech to a group of military personnel.
+Answer7: The man in a suit is giving a speech to a group of soldiers. He is standing at a podium and speaking to them.
+Answer8: talking
+Answer9: The man in a suit is giving a speech or addressing a group of military personnel, who are standing at attention in front of him.
+Answer10: The man in a suit is standing at a podium and giving a speech to a group of military personnel.
+Answer11: The man in a suit is giving a speech to a group of people.
+Answer12: The man in a suit is giving a speech to a group of people in uniform.
+Answer13: The man in a suit is giving a speech to a group of people in the audience. He is standing at a podium and speaking into a microphone. The audience is made up of a mix of men and women in military uniforms, as well as some civilians. There are flags on either side of the stage, including an American flag and a flag with a blue background and white stars.
+Answer14: In the image, a man in a suit is standing on a stage or podium, and he appears to be addressing a group of people. Several men in military uniforms are sitting in rows facing the speaker, with some of them having their hands on their chests. The speaker's task is likely to deliver a speech or presentation to this audience, which consists of both civilians and members of the military. This event may be related to a military-related gathering, conference, or ceremony, where the speaker is sharing information or updates with the attendees.
+Answer15: speaking
+Answer16: The man in the suit is speaking to a group of soldiers.
+Answer17:  Giving a speech.
+Answer18: A man in a suit is speaking at a podium to a group of military personnel. So the answer is speaking.
+Answer19: The answer is speaking.
+
+###Output Format:
+Answer1: With/Without hallucination, [evidence]
+Answer2: With/Without hallucination, [evidence]
+Answer3: With/Without hallucination, [evidence]
+Answer4: With/Without hallucination, [evidence]
+Answer5: With/Without hallucination, [evidence]
+Answer6: With/Without hallucination, [evidence]
+Answer7: With/Without hallucination, [evidence]
+Answer8: With/Without hallucination, [evidence]
+Answer9: With/Without hallucination, [evidence]
+Answer10: With/Without hallucination, [evidence]
+Answer11: With/Without hallucination, [evidence]
+Answer12: With/Without hallucination, [evidence]
+Answer13: With/Without hallucination, [evidence]
+Answer14: With/Without hallucination, [evidence]
+Answer15: With/Without hallucination, [evidence]
+Answer16: With/Without hallucination, [evidence]
+Answer17: With/Without hallucination, [evidence]
+Answer18: With/Without hallucination, [evidence]
+Answer19: With/Without hallucination, [evidence]
+
+
+GPT Output:
+Answer1: Without hallucination, The response is semantically similar to the ground truth answer and aligns with the image information provided, as it accurately describes the man in a suit giving a speech to a group of military men and women.
+Answer2: Without hallucination, The response is semantically similar to the ground truth answer and aligns with the image information provided, accurately stating that the man in a suit is giving a speech in front of a group of military men and women.
+Answer3: Without hallucination, The response is semantically similar to the ground truth answer, correctly mentioning that the man in a suit is giving a speech.
+Answer4: Without hallucination, The response accurately captures the scene described in the image details, mentioning that the man in a suit is giving a speech at a podium in front of an audience.
+Answer5: Without hallucination, The response is detailed and aligns with the ground truth answer. It accurately describes the man in a suit giving a speech to an audience of military personnel, standing at a podium and addressing them.
+Answer6: Without hallucination, The response is in line with the ground truth answer and describes the man in a suit giving a speech to a group of military personnel.
+Answer7: Without hallucination, The response accurately describes the man in a suit giving a speech to a group of soldiers at a podium.
+Answer8: Without hallucination, The response is semantically similar to the ground truth answer, stating that the man in a suit is talking, which is a general description of giving a speech.
+Answer9: Without hallucination, The response accurately describes the man in a suit giving a speech or addressing a group of military personnel, aligning with the image information provided.
+Answer10: Without hallucination, The response correctly states that the man in a suit is standing at a podium and giving a speech to a group of military personnel.
+Answer11: Without hallucination, The response is in line with the ground truth answer, mentioning that the man in a suit is giving a speech to a group of people.
+Answer12: Without hallucination, The response accurately describes the man in a suit giving a speech to a group of people in uniform, which is consistent with the image information.
+Answer13: Without hallucination, The detailed response aligns with the ground truth answer and captures various elements from the image information, such as the speaker at the podium addressing a mixed audience of military and civilians.
+Answer14: Without hallucination, The response provides a detailed analysis that is consistent with the ground truth and image details, describing the scene of a man in a suit speaking to an audience of military and civilians at an event.
+Answer15: Without hallucination, The simple response aligns with the ground truth answer stating that the man is speaking.
+Answer16: Without hallucination, The response accurately mentions that the man in the suit is speaking to a group of soldiers, which is supported by the image information.
+Answer17: Without hallucination, The response is identical to the ground truth answer, stating that the man is giving a speech.
+Answer18: Without hallucination, The response correctly states that the man in a suit is speaking at a podium to a group of military personnel, which is consistent with the image details.
+Answer19: Without hallucination, The response concisely states that the answer is speaking, aligning with the ground truth question and image information.
