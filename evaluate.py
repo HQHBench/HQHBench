@@ -2,7 +2,7 @@ import argparse
 import json
 import re
 import time
-
+import copy
 from tqdm import tqdm
 from utils import *
 import openai
@@ -14,7 +14,7 @@ def evaluate(args):
     openai_key = args.openai_key
     openai.api_key = openai_key
     num = args.num
-    all_hal_results = {f'Model{i+1}': hal_results for i in range(num)}
+    all_hal_results = {f'Model{i+1}': copy.deepcopy(hal_results) for i in range(num)}
     all_hal_rates = {f'Model{i+1}': {} for i in range(num)}
 
     with open(ans_file, 'r', encoding='utf-8') as f:
