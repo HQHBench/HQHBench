@@ -9,79 +9,64 @@ To evaluate the LVLM responses, you need to provide brief evidence to support yo
 ###Evaluation criteria:
 -Without hallucination: The LVLM response is semantically similar to the ground truth answer and does not contain any contradictory factual claim with the provided information.
 -With hallucination: The LVLM response is completely different from the ground truth answer, or contains a contradictory factual claim about an object, action, attribute, or any other detail that is not grounded in the provided information.
+Given the input instruction, grount truth answer and detailed image information, please determine whether the response provided by a Large Multimodal Model (LMM) contains any hallucination. Hallucination here refers to the situation that the generated response are inconsistent with the input image. 
 
 ###Instruction:
-What is the man in a suit doing?
+What is the man doing?
 
 ###Ground Truth:
-Giving a speech.
+Playing tennis.
 
 ###Image Caption:
-A man giving a speech to a roomful of people.
+A man swinging a tennis racquet at a ball on a court.
 
 ###Image Details:
-three flags stand near a wall X:689 Y:127 Width:217 Height:217
-man giving speech behind podium X:461 Y:226 Width:314 Height:314
-A man speaking X:486 Y:206 Width:256 Height:256
-black speakers next to the soldier X:166 Y:301 Width:163 Height:163
-the man is giving a speech X:0 Y:7 Width:950 Height:950
-The flag of the United State X:698 Y:120 Width:42 Height:42
-Man and women in uniform X:13 Y:319 Width:999 Height:999
-Logo mounted on a wall X:13 Y:15 Width:141 Height:141
-Microphones on a speaker's podium X:587 Y:319 Width:80 Height:80
-Corner of wooden speaker's podium X:452 Y:333 Width:68 Height:68
-A man in uniform X:305 Y:310 Width:86 Height:86
-A man seen from the back X:363 Y:421 Width:152 Height:152
-man looking to his left X:322 Y:326 Width:52 Height:52
-back of balding man's head X:237 Y:415 Width:86 Height:86
-blue and white flag X:754 Y:130 Width:59 Height:59
-man wearing dark tie X:604 Y:282 Width:30 Height:30
-shadow on wall behind flag X:869 Y:172 Width:32 Height:32
-man wearing dark suit X:582 Y:282 Width:96 Height:96
-woman with short hair X:882 Y:348 Width:77 Height:77
-black speaker near man X:247 Y:305 Width:86 Height:86
-man standing behind a podium X:512 Y:191 Width:188 Height:188
-man wearing glasses X:3 Y:343 Width:58 Height:58
-American Flag behind the man speaking X:693 Y:127 Width:29 Height:29
-A  small bald spot on a mans head X:389 Y:424 Width:76 Height:76
-A microphone directed at the man speaking X:636 Y:307 Width:13 Height:13
-A mans face looking at the gentlemen speaking X:324 Y:320 Width:40 Height:40
-A black square speaker X:115 Y:311 Width:76 Height:76
-The mans hand X:512 Y:273 Width:40 Height:40
-a mans glasses X:32 Y:367 Width:16 Height:16
-A womans head X:877 Y:337 Width:46 Height:46
-The mans dark tie X:610 Y:280 Width:13 Height:13
-The wall is white X:298 Y:23 Width:251 Height:251
-Two bald heads X:230 Y:388 Width:284 Height:284
-A brown wooden platform X:452 Y:326 Width:265 Height:265
-woman with a short haircut X:884 Y:346 Width:57 Height:57
-The speaker's brown tie X:605 Y:285 Width:14 Height:14
-Microphone in front of man speaking X:637 Y:318 Width:38 Height:38
-White and blue flag with gold emblem X:826 Y:130 Width:57 Height:57
-Black, rectangular speakers, one lying down.   X:111 Y:278 Width:260 Height:260
-White wall, featuring Air National Guard insignia.   X:10 Y:63 Width:361 Height:361
-A black light switch.  X:184 Y:285 Width:17 Height:17
+a green tennis ball X:340 Y:137 Width:25 Height:25
+the tennis racket is black X:100 Y:5 Width:70 Height:70
+a white wristband X:130 Y:140 Width:20 Height:20
+the man has black shorts X:90 Y:36 Width:301 Height:301
+the cap is white X:140 Y:35 Width:55 Height:55
+a pair of shorts X:100 Y:267 Width:161 Height:161
+yellow tennis ball in the air X:334 Y:140 Width:39 Height:39
+person is wearing a white cap X:136 Y:17 Width:66 Height:66
+person is holding tennis racket with right hand X:96 Y:21 Width:99 Height:99
+red,white and blue logo on shirt X:227 Y:146 Width:15 Height:15
+part of the man's black shorts X:192 Y:285 Width:65 Height:65
+the top part of the tennis racket X:107 Y:19 Width:59 Height:59
+letters from ad on the wall X:282 Y:282 Width:172 Height:172
+tennis player's hand in back of ball X:337 Y:108 Width:55 Height:55
+a portion of the green shirt on man X:169 Y:162 Width:65 Height:65
+the handle on the tennis racket X:147 Y:98 Width:20 Height:20
+the website address for tennis player X:6 Y:295 Width:60 Height:60
+symbol on the tennis shirt X:216 Y:141 Width:32 Height:32
+lime green color X:173 Y:200 Width:60 Height:60
+white wrist band X:125 Y:132 Width:37 Height:37
+green wall in the back X:246 Y:68 Width:119 Height:119
+edge of the green wall X:232 Y:37 Width:146 Height:146
+A lime green short sleeved shirt.  X:120 Y:105 Width:186 Height:186
+A long green pole. X:2 Y:29 Width:496 Height:496
 
-###Model Response:
-Answer1: He's giving a speech to a crowd of military men and women
-Answer2: He's giving a speech in front of a group of military men and women
-Answer3: giving a speech
-Answer4: The man in a suit is giving a speech at a podium in front of an audience.
-Answer5: The man in a suit is giving a speech to an audience of military personnel. He is standing at a podium and speaking to the audience.
-Answer6: The man in a suit is giving a speech to a group of military personnel.
-Answer7: The man in a suit is giving a speech to a group of soldiers. He is standing at a podium and speaking to them.
-Answer8: talking
-Answer9: The man in a suit is giving a speech or addressing a group of military personnel, who are standing at attention in front of him.
-Answer10: The man in a suit is standing at a podium and giving a speech to a group of military personnel.
-Answer11: The man in a suit is giving a speech to a group of people.
-Answer12: The man in a suit is giving a speech to a group of people in uniform.
-Answer13: The man in a suit is giving a speech to a group of people in the audience. He is standing at a podium and speaking into a microphone. The audience is made up of a mix of men and women in military uniforms, as well as some civilians. There are flags on either side of the stage, including an American flag and a flag with a blue background and white stars.
-Answer14: In the image, a man in a suit is standing on a stage or podium, and he appears to be addressing a group of people. Several men in military uniforms are sitting in rows facing the speaker, with some of them having their hands on their chests. The speaker's task is likely to deliver a speech or presentation to this audience, which consists of both civilians and members of the military. This event may be related to a military-related gathering, conference, or ceremony, where the speaker is sharing information or updates with the attendees.
-Answer15: speaking
-Answer16: The man in the suit is speaking to a group of soldiers.
-Answer17:  Giving a speech.
-Answer18: A man in a suit is speaking at a podium to a group of military personnel. So the answer is speaking.
-Answer19: The answer is speaking.
+
+###LMM Answers:
+Answer1: He's about to hit the tennis ball with his racket
+Answer2: He is hitting the ball with his racquet
+Answer3: he is hitting the ball with his racket
+Answer4: playing tennis
+Answer5: playing tennis
+Answer6: The man in the image is playing tennis. He is holding a tennis racket and swinging it to hit a tennis ball.
+Answer7: The man is playing tennis, and he is in the process of hitting the ball with his racket. He is wearing a green shirt and black shorts, and he is standing on a tennis court.
+Answer8: playing tennis 
+Answer9: The man is playing tennis, swinging his tennis racket at a ball on a tennis court.
+Answer10: The man is playing tennis, holding a tennis racket, and reaching to hit the ball.
+Answer11: The man is playing tennis. He is wearing a green shirt and black shorts, and he is holding a racket in his hand. He is running towards the net to hit the ball.
+Answer12: The man is playing tennis. He is wearing a green shirt and black shorts, and he is holding a tennis racket in his right hand. He is about to swing the racket and hit the ball over the net.
+Answer13: The man is playing tennis. He is holding a racket and swinging it at a ball that is coming towards him. The green shirt he is wearing has the word "tennis" written on the front of it. The man's eyes are focused on the ball as he prepares to hit it with his racket.
+Answer14: The man is holding a tennis racket in his right hand and preparing to hit a tennis ball. His left arm is extended, and he is standing near the net. This suggests that he is in the process of serving or returning a tennis shot.
+Answer15: tennis
+Answer16: The man in the image is playing tennis. He's standing on a tennis court and holding a tennis racquet, while making a funny face.
+Answer17:  Playing tennis.
+Answer18: A man playing tennis on the tennis court. So the answer is playing tennis.
+Answer19: The answer is playing tennis.
 
 ###Output Format:
 Answer1: With/Without hallucination, [evidence]
@@ -104,24 +89,23 @@ Answer17: With/Without hallucination, [evidence]
 Answer18: With/Without hallucination, [evidence]
 Answer19: With/Without hallucination, [evidence]
 
-
 GPT Output:
-Answer1: Without hallucination, The response is semantically similar to the ground truth answer and aligns with the image information provided, as it accurately describes the man in a suit giving a speech to a group of military men and women.
-Answer2: Without hallucination, The response is semantically similar to the ground truth answer and aligns with the image information provided, accurately stating that the man in a suit is giving a speech in front of a group of military men and women.
-Answer3: Without hallucination, The response is semantically similar to the ground truth answer, correctly mentioning that the man in a suit is giving a speech.
-Answer4: Without hallucination, The response accurately captures the scene described in the image details, mentioning that the man in a suit is giving a speech at a podium in front of an audience.
-Answer5: Without hallucination, The response is detailed and aligns with the ground truth answer. It accurately describes the man in a suit giving a speech to an audience of military personnel, standing at a podium and addressing them.
-Answer6: Without hallucination, The response is in line with the ground truth answer and describes the man in a suit giving a speech to a group of military personnel.
-Answer7: Without hallucination, The response accurately describes the man in a suit giving a speech to a group of soldiers at a podium.
-Answer8: Without hallucination, The response is semantically similar to the ground truth answer, stating that the man in a suit is talking, which is a general description of giving a speech.
-Answer9: Without hallucination, The response accurately describes the man in a suit giving a speech or addressing a group of military personnel, aligning with the image information provided.
-Answer10: Without hallucination, The response correctly states that the man in a suit is standing at a podium and giving a speech to a group of military personnel.
-Answer11: Without hallucination, The response is in line with the ground truth answer, mentioning that the man in a suit is giving a speech to a group of people.
-Answer12: Without hallucination, The response accurately describes the man in a suit giving a speech to a group of people in uniform, which is consistent with the image information.
-Answer13: Without hallucination, The detailed response aligns with the ground truth answer and captures various elements from the image information, such as the speaker at the podium addressing a mixed audience of military and civilians.
-Answer14: Without hallucination, The response provides a detailed analysis that is consistent with the ground truth and image details, describing the scene of a man in a suit speaking to an audience of military and civilians at an event.
-Answer15: Without hallucination, The simple response aligns with the ground truth answer stating that the man is speaking.
-Answer16: Without hallucination, The response accurately mentions that the man in the suit is speaking to a group of soldiers, which is supported by the image information.
-Answer17: Without hallucination, The response is identical to the ground truth answer, stating that the man is giving a speech.
-Answer18: Without hallucination, The response correctly states that the man in a suit is speaking at a podium to a group of military personnel, which is consistent with the image details.
-Answer19: Without hallucination, The response concisely states that the answer is speaking, aligning with the ground truth question and image information.
+Answer1: Without hallucination, The response is consistent with the ground truth answer and the image information provided. The man is depicted as about to hit the tennis ball.
+Answer2: Without hallucination, The response is semantically similar to the ground truth answer and accurately describes the man hitting the ball with his racquet.
+Answer3: Without hallucination, The response correctly identifies the man hitting the ball with his racket, aligning with the ground truth information.
+Answer4: Without hallucination, The response is factually correct and concisely states that the man is playing tennis.
+Answer5: Without hallucination, The response accurately states that the man is playing tennis, in line with the ground truth information.
+Answer6: Without hallucination, The response provides detailed information consistent with the ground truth answer, mentioning the man holding a tennis racket and swinging it to hit a tennis ball.
+Answer7: Without hallucination, The response accurately describes the man playing tennis, swinging a racket towards a ball, and mentions his attire and the setting of a tennis court.
+Answer8: Without hallucination, The response correctly identifies that the man is playing tennis, matching the ground truth information.
+Answer9: Without hallucination, The response correctly states that the man is playing tennis and swinging his racket at a tennis ball.
+Answer10: Without hallucination, The response accurately describes the man playing tennis, holding a racket, and reaching to hit the ball.
+Answer11: Without hallucination, The response provides a detailed and accurate description of the man playing tennis, holding a racket in his hand, wearing specific attire, and running towards the net.
+Answer12: Without hallucination, The response accurately describes the man playing tennis, preparing to hit the ball over the net with his racket, in line with the factual information.
+Answer13: Without hallucination, The response provides detailed information consistent with the ground truth answer, describing the man holding a racket and preparing to hit a ball, his attire, and focus on the ball.
+Answer14: Without hallucination, The response accurately describes the man holding a tennis racket, preparing to hit a ball, and suggests he is serving or returning a shot, without contradicting the ground truth information.
+Answer15: Without hallucination, The response clearly states that the man is playing tennis, aligning with the provided information.
+Answer16: Without hallucination, The response accurately describes the man playing tennis, standing on a tennis court, holding a tennis racquet, without introducing any contradictory information.
+Answer17: Without hallucination, The response concisely states that the man is playing tennis, in line with the ground truth information.
+Answer18: Without hallucination, The response correctly identifies the man as playing tennis on a tennis court, consistent with the provided details.
+Answer19: Without hallucination, The response straightforwardly states that the man is playing tennis, matching the ground truth information.
