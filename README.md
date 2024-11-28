@@ -15,7 +15,7 @@ Inspired by psychometrics, **HQM** focuses on the reliability and validity of ha
 
 ## HQH Benchmark
 
-**HQH** is a high-quality hallucination benchmark for LVLMs built on  [Visual Genome](https://arxiv.org/pdf/1602.07332v1.pdf) dataset. It is created to evaluate the performance of LVLMs across different types of hallucination, highlighting their shortcomings. It consists of 1600 free-form VQA image-instruction pairs, with 200 pairs for each hallucination type.
+**HQH** is a high-quality hallucination benchmark for LVLMs built on  [Visual Genome](https://arxiv.org/pdf/1602.07332v1.pdf) dataset. It is created to evaluate the performance of LVLMs across different types of hallucination, highlighting their shortcomings. It consists of 4000 free-form VQA image-instruction pairs, with 500 pairs for each hallucination type.
 
 <p align="center">
 <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/typeexample.png" alt="typeexample" width="600" />
