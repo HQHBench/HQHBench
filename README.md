@@ -59,11 +59,9 @@ i.e., add an "answer" field to each instance in `HQH.json`.
 ### Results
 
 <p align="center">
-    <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/rada.png" alt="rada" width="600" />
+    <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/rada.png" alt="rada" width="400" />
 </p>
-<p align="center">
-    <img src="https://github.com/HQHBench/HQHBench/blob/main/assets/leaderboard.png" width="800" />
-</p>
+
 
 ## Related Projects
 
@@ -71,11 +69,17 @@ i.e., add an "answer" field to each instance in `HQH.json`.
 - [InstructBLIP](https://github.com/salesforce/LAVIS/blob/main/projects/instructblip)
 - [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer)
 - [LLaVA-1.5](https://github.com/haotian-liu/LLaVA)
+- [LLaVA-OneVision](https://github.com/LLaVA-VL/LLaVA-NeXT)
 - [MiniGPT4](https://github.com/Vision-CAIR/MiniGPT-4)
 - [MiniGPT-v2](https://github.com/Vision-CAIR/MiniGPT-4)
 - [Otter](https://github.com/Vision-CAIR/MiniGPT-4)
 - [Qwen-VL](https://github.com/QwenLM/Qwen-VL)
+- [Qwen2-VL](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct)
 - [Shikra](https://github.com/shikras/shikra)
+- [GLM-4V](https://github.com/THUDM/GLM-4)
+- [Phi-3-Vison](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct)
+- [Emu2-Chat](https://huggingface.co/BAAI/Emu2-Chat)
+- [MiniCPM](https://github.com/OpenBMB/MiniCPM)
 
 - [Gemini-1.5-Pro](https://ai.google.dev/gemini-api/docs)
 - [GPT-4o](https://platform.openai.com/docs/overview)
