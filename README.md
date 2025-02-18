@@ -49,7 +49,7 @@ The answer of LVLMs should be organized in a json file in the following format:
     "instruction": "What is the man doing?",
     "ground_truth": "Playing tennis.",
     "type": "action",
-    "answer": "He is about to hit the ball with his tennis racquet",...},
+    "answer": "He is about to hit the ball with his tennis racquet"},
     ...
 ]
 ```
