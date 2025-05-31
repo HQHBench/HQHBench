@@ -8,7 +8,7 @@
 
 ### Data
 
-You can download the images from this [LINK](https://1drv.ms/u/c/3990e975c588b26f/EUhh8nJwRRpMkWk4xItqMQMB6phnWkdCykliVUdlUs4hNw). The image annotations are saved in `image_data.json`.
+You can download the images from this [LINK](https://1drv.ms/u/c/3990e975c588b26f/EUhh8nJwRRpMkWk4xItqMQMBxnO3IQkzsTZvTb86BfEEvA). The image annotations are saved in `image_data.json`.
 
 Our evaluation data is saved in `HQH.json`, with the following format:
 
